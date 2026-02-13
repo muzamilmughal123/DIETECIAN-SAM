@@ -19,7 +19,7 @@
   <header class="header">
     <div class="container header-container">
       <div class="brand">
-        <h1>SAM Nutri Zone</h1>
+        <h1> Nutri Zone</h1>
         <span>By Dietician Samia Anwar</span>
       </div>
       <button class="mobile-menu-btn" aria-label="Toggle Menu">
@@ -259,6 +259,23 @@
     </div>
   </div>
 </section>
+
+<section id="updates" style="padding: 60px 0; background: #fff;">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 40px;">
+      <h2 style="color: #2E5A44; font-family: 'Playfair Display';">Latest from Instagram</h2>
+      <p>Follow @samnutrizone for daily health tips and results</p>
+    </div>
+
+    <div id="insta-feed">
+       </div>
+
+    <div style="text-align: center; margin-top: 30px;">
+      <a href="https://www.instagram.com/mzmughal.01" target="_blank" class="btn btn-primary">Follow on Instagram</a>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section id="faq" class="faq-section" style="padding: 80px 0; background-color: #fff;">
   <div class="container">
@@ -332,28 +349,29 @@
       </div>
 
       <div class="contact-form-wrapper">
-        <form class="contact-form">
+        <form id="diet-form" action="https://formspree.io/f/mdaleddd" method="POST" class="contact-form">
           <div class="form-group">
-            <input type="text" placeholder="Your Name" required>
+            <input type="text" name="name" placeholder="Your Name" required>
           </div>
           <div class="form-group">
-            <input type="email" placeholder="Your Email" required>
+            <input type="email" name="email" placeholder="Your Email" required>
           </div>
           <div class="form-group">
-            <select>
-              <option>Correction of Weight</option>
-              <option>PCOS / Hormonal Issues</option>
-              <option>Diabetes Management</option>
-              <option>Other</option>
+            <select name="goal">
+              <option value="Weight Loss">Weight Loss / Gain</option>
+              <option value="PCOS">PCOS / Hormonal Issues</option>
+              <option value="Diabetes">Diabetes Management</option>
             </select>
           </div>
           <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            <textarea name="message" placeholder="Briefly describe your health goals..." rows="4" style="width: 100%; padding: 15px; border: 1px solid #ddd; border-radius: 5px;"></textarea>
           </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
         </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="footer">
@@ -388,9 +406,14 @@
     });
   });
 </script>
+
+
 <a href="https://wa.me/923035843627" class="whatsapp-float" target="_blank">
   <i class="fab fa-whatsapp"></i>
 </a>
+
+
+
 </body>
 
 </html>
