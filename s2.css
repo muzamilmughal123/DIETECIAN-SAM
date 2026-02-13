@@ -767,3 +767,19 @@ img {
   transform: scale(1.1);
   color: white;
 }
+
+
+/* Instagram Feed Styling */
+#insta-feed {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    overflow: hidden; /* Taake images corners se baahar na niklein */
+}
+
+/* Is se images ke darmiyan thori jagah ban jaye gi */
+#insta-feed iframe, #insta-feed div {
+    border-radius: 10px !important;
+}
