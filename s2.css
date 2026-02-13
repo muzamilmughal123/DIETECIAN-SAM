@@ -1,3 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Page load hote waqt transitions behtar karne ke liye */
+body {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 /* --- Variables & Reset --- */
 :root {
   --primary-color: #2E5A44;
